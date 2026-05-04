@@ -1,9 +1,9 @@
 import { test } from '@playwright/test';
-import { HomePage } from './pages/HomePage';
-import { ProductPage } from './pages/ProductPage';
-import { CartPage } from './pages/CartPage';
+import { HomePage } from '../pages/HomePage';
+import { ProductPage } from '../pages/ProductPage';
+import { CartPage } from '../pages/CartPage';
 
-test('Hepsiburada Ürün Akışı Testi - POM Pattern', async ({ page, context }) => {
+test('Hepsiburada Ürün Akışı Testi', async ({ page, context }) => {
   // 1. Ana sayfa açılır
   const homePage = new HomePage(page);
   await homePage.goto();
